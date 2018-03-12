@@ -1,0 +1,17 @@
+#include<iostream>
+#include<cmath>
+using namespace std;
+double derv(double x, double h);
+{
+  double x,h;
+  h=0.000001;
+  cin >> x;
+  for(h;h<=1;h*10)
+    {
+      cout << h << "\t"<< derv(x,h)<< endl;
+    }
+}
+double derv(double x, double h)
+{
+  return (sin(x+h)-sin(x))/h;
+}
